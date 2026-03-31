@@ -89,19 +89,10 @@ builder.Services.AddAuthentication(options =>
             return Task.CompletedTask;
         }
     };
-})
-.AddMcp(options =>
-{
-    options.ResourceMetadata = new()
-    {
-        Resource = new Uri(serverUrl),
-        ResourceDocumentation = new Uri("https://docs.microsoft.com/entra/identity/"),
-        AuthorizationServers = { new Uri(entraIdOptions.Authority) },
-        ScopesSupported = entraIdOptions.Scopes.Length > 0 
-            ? entraIdOptions.Scopes.ToList() 
-            : new List<string>()
-    };
 });
+// Note: Removed .AddMcp() OAuth metadata to allow MCP Inspector UI to work with manual token headers
+// MCP Inspector doesn't support Entra ID's OAuth flow (no dynamic client registration)
+// Clients can still authenticate by passing Bearer token in Authorization header
 
 builder.Services.AddAuthorization();
 
@@ -115,7 +106,8 @@ builder.Services.AddMcpServer()
     .WithTools<WeatherTools>()
     .WithTools<AsyncOperationTools>()
     .WithTools<LongRunningTools>()
-    .WithTools<ValidateUserTool>();
+    .WithTools<ValidateUserTool>()
+    .WithTools<JsonFileTool>();
 
 builder.Services.AddCors(options =>
 {

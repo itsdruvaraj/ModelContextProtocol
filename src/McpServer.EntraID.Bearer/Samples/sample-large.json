@@ -1,0 +1,47 @@
+{
+  "id": "project-001",
+  "name": "Enterprise Data Integration Platform",
+  "version": "2.5.0",
+  "status": "active",
+  "createdAt": "2025-06-15T10:30:00Z",
+  "updatedAt": "2026-02-04T14:22:00Z",
+  "description": "This Enterprise Data Integration Platform is a comprehensive solution designed to streamline and automate the process of collecting, transforming, and distributing data across multiple systems within an organization. The platform provides a unified interface for managing data pipelines, enabling businesses to connect disparate data sources, apply complex transformations, and deliver processed data to various downstream applications and analytics tools.\n\nKey Features and Capabilities:\n\n1. Data Source Connectivity: The platform supports a wide range of data sources including relational databases (SQL Server, PostgreSQL, MySQL, Oracle), NoSQL databases (MongoDB, Cosmos DB, Cassandra), cloud storage services (Azure Blob Storage, AWS S3, Google Cloud Storage), streaming platforms (Apache Kafka, Azure Event Hubs, AWS Kinesis), and various APIs (REST, GraphQL, SOAP). This extensive connectivity ensures that organizations can integrate data from virtually any source within their technology ecosystem.\n\n2. Data Transformation Engine: At the core of the platform lies a powerful transformation engine that supports both code-based and visual transformation design. Users can create complex data transformations using SQL, Python, or Spark, or leverage the intuitive drag-and-drop interface for simpler mappings. The engine supports common transformation patterns including filtering, aggregation, joining, pivoting, data type conversion, and custom business logic implementation.\n\n3. Data Quality and Governance: Built-in data quality checks ensure that data meets defined standards before being processed or delivered. The platform includes profiling capabilities to understand data characteristics, validation rules to enforce data integrity, and cleansing functions to standardize and correct data issues. Comprehensive lineage tracking provides visibility into data origins and transformations, supporting regulatory compliance and audit requirements.\n\n4. Orchestration and Scheduling: The platform includes a robust orchestration layer that manages the execution of data pipelines. Users can define complex workflows with dependencies, conditional logic, and error handling. Scheduling capabilities support cron-based schedules, event-driven triggers, and manual execution. The orchestrator monitors pipeline health and provides alerting for failures or anomalies.\n\n5. Scalability and Performance: Designed for enterprise workloads, the platform scales horizontally to handle increasing data volumes. It leverages distributed processing frameworks and can be deployed on-premises or in cloud environments. Performance optimization features include parallel processing, incremental loading, caching, and resource management to ensure efficient utilization of computing resources.\n\n6. Security and Access Control: Enterprise-grade security features protect sensitive data throughout the integration process. The platform supports encryption at rest and in transit, role-based access control, integration with identity providers (Azure AD, Okta, LDAP), and audit logging of all user actions and data access. Data masking and tokenization capabilities help protect PII and other sensitive information.\n\n7. Monitoring and Observability: Comprehensive monitoring dashboards provide real-time visibility into pipeline performance, data throughput, and system health. Integration with popular observability tools (Prometheus, Grafana, Azure Monitor) enables centralized monitoring. Detailed logs and metrics support troubleshooting and performance tuning.\n\n8. API and Extensibility: The platform exposes RESTful APIs for programmatic access to all functionality, enabling integration with CI/CD pipelines, custom applications, and automation scripts. A plugin architecture allows extending the platform with custom connectors, transformations, and integrations.\n\nThis platform represents a significant advancement in enterprise data management, providing organizations with the tools they need to become truly data-driven. By eliminating data silos and enabling seamless data flow, businesses can make faster, more informed decisions and drive innovation across all areas of their operations.",
+  "owner": {
+    "id": "user-123",
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@company.com",
+    "department": "Data Engineering"
+  },
+  "team": [
+    {
+      "id": "user-124",
+      "name": "Michael Chen",
+      "role": "Lead Developer"
+    },
+    {
+      "id": "user-125",
+      "name": "Emily Rodriguez",
+      "role": "Data Architect"
+    },
+    {
+      "id": "user-126",
+      "name": "David Kim",
+      "role": "DevOps Engineer"
+    }
+  ],
+  "technologies": [
+    "Azure Data Factory",
+    "Apache Spark",
+    "Python",
+    "SQL Server",
+    "Cosmos DB",
+    "Kubernetes",
+    "Terraform"
+  ],
+  "metadata": {
+    "priority": "high",
+    "budget": 250000,
+    "estimatedCompletionDate": "2026-12-31",
+    "tags": ["data-integration", "enterprise", "azure", "etl", "analytics"]
+  }
+}
